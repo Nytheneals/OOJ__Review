@@ -8,7 +8,6 @@ class User {
 
 const userOne = new User("nythes@nate.com", "Nathaneals");
 
-
 // the new keyword creates a new empty object
 // sets the value of this to the new empty object
 // calls the constructor method
