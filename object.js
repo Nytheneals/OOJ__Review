@@ -9,10 +9,10 @@ const userOne = {
   }
 };
 
-console.log(userOne);
 
-const { email, name } = userOne;
+const { email } = userOne;
 console.log(userOne.login());
-console.log(name);
+console.log(userOne.name = "Paul");
 console.log(email);
 console.log(userOne.logout());
+console.log(userOne);
