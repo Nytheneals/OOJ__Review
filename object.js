@@ -1,18 +1,17 @@
-const userOne = {
-  email: "nythes@gmail.com",
-  name: "Nathaneals",
-  login() {
-    console.log(this.name, "has logged in");
-  },
-  logout() {
-    console.log(this.name, "has logged out");
+class User {
+  constructor(email, name) {
+    this.name = name;
+    this.email = email;
   }
-};
+}
 
 
-const { email } = userOne;
-console.log(userOne.login());
-console.log(userOne.name = "Paul");
-console.log(email);
-console.log(userOne.logout());
+const userOne = new User("nythes@nate.com", "Nathaneals");
+
+
+// the new keyword creates a new empty object
+// sets the value of this to the new empty object
+// calls the constructor method
+
 console.log(userOne);
+
