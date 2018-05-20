@@ -1,21 +1,32 @@
+// METHOD CHAINING
 class User {
   constructor(email, name) {
     this.name = name;
     this.email = email;
+    this.score = 0;
   }
   login() {
-    console.log(`${this.email} is Logged in`)
+    console.log(`${this.email} is Logged in`);
+    return this;
   }
   logout() {
-    console.log(`${this.email} is Logged Out`)
+    console.log(`${this.email} is Logged Out`);
+    return this;
+  }
+  updateScore() {
+    this.score++;
+    console.log(`${this.name}'s score is ${this.score}`);
+    return this;
   }
 }
-const userOne = new User("nythes@nate.com", "Nathaneals");
-const userTwo = new User("andru@nate.com", "Andrew");
-
-// the new keyword creates a new empty object sets the value of this to the new
-// empty object calls the constructor method
+const userOne = new User("nytheneals@insta.com", "Nytheneals");
+const userTwo = new User("miguel@miguelmusic.com", "Miguel");
 
 console.log(userOne);
-userOne.login();
-userTwo.logout();
+console.log(userTwo);
+
+userOne.login().updateScore().logout();
+userTwo.login().updateScore().logout();
+
+console.log(userOne);
+console.log(userTwo);
