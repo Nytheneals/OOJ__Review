@@ -10,7 +10,6 @@ class User {
     console.log(`${this.email} is Logged Out`)
   }
 }
-
 const userOne = new User("nythes@nate.com", "Nathaneals");
 const userTwo = new User("andru@nate.com", "Andrew");
 
